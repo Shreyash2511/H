@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background: #f2f2f2;
+}
+
+.container {
+    background: white;
+    width: 500px;
+    padding: 25px 25px;
+    margin: 50px auto 0;
+    border-top: 10px solid blue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+
+.container h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.input-name {
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.user {
+    padding: 8px 11px;
+}
+
+.name {
+    width: 45%;
+    padding: 8px 0 8px 40px;
+}
+
+.input-name span {
+    margin-left: 35px;
+}
+
+.text-name {
+    width: 100%;
+    padding: 8px 0 8px 50px;
+}
+
+.input-name i {
+    position: absolute;
+    font-size: 18px;
+    color: blue;
+    padding: 8px 11px;
+    border-right: 1px solid #cccccc;
+}
+
+.text-name,
+.name {
+    border: 1px solid #cccccc;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.text-name:hover,
+.name:hover {
+    background: #f2f2f2;
+}
+
+.text-name:focus,
+.name:focus {
+    border-color: blue;
+}
+
+.radio-button {
+    margin-right: 4px;
+}
+
+.country {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    background: white;
+    appearance: none;
+    transition: all 0.2s ease;
+}
+
+.country:hover+.arrow,
+.country:focus+.arrow {
+    border-top-color: blue;
+}
+
+.arrow {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.check-button {
+    margin-right: 10px;
+    position: relative;
+}
+
+.check {
+    font-size: 18px;
+}
+
+.check-button:hover {
+    border-color: blue;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background: green;
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+    .input-name {
+        margin-bottom: -10px;
+    }
+    .name {
+        width: 100%;
+        padding: 8px 0 8px 40px;
+        margin-bottom: 10px;
+    }
+    .input-name span {
+        padding: 0;
+        margin: 0;
+    }
+    .form-container {
+        width: 100%;
+    }
+}
